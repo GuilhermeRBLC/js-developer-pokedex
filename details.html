@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Detalhes</title>
+
+        <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+
+    <!-- Nosso CSS -->
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="stylesheet" href="/assets/css/pokemon-types.css">
+    <link rel="stylesheet" href="/assets/css/details.css">
+    </head>
+    <body class="grass">
+
+        <section class="details">
+            <div class="header">
+                <h1>Bulbasaur</h1>
+                <span class="number">#001</span>
+                <ol class="types">
+                    <li>Grass</li>
+                    <li>Poison</li>
+                </ol>
+    
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="Bulbasaur">    
+            </div>
+            
+            <div class="info">
+
+                <ol class="sections">
+                    <li><a href="#about" class="actived">About</a></li>
+                    <li><a href="#base-stats">Base Stats</a></li>
+                    <li><a href="#evolution">Evolution</a></li>
+                    <li><a href="#moves">Moves</a></li>
+                </ol>
+
+                <div class="sections-content">
+
+                    <div id="about" class="section show">
+
+                        <ul>
+                            <li><span class="title">Species</span><span>Seed</span></li>
+                            <li><span class="title">Height</span><span>2'3.6" (0,70 cm)</span></li>
+                            <li><span class="title">Weight</span><span>15,2 lbs (6,9 kg)</span></li>
+                            <li><span class="title">Abilities</span><span>Overgrow, Chlorophyl</span></li>
+                        </ul>
+
+                        <h3>Breeding</h3>
+
+                        <ul>
+                            <li><span class="title">Gender</span><span class="male">87.5%</span><span class="female">12.5%</span></li>
+                            <li><span class="title">Egg Groups</span><span>Monster</span></li>
+                            <li><span class="title">Egg Cycle</span><span>Grass</span></li>
+                        </ul>
+
+                    </div>
+    
+                    <div id="base-stats" class="section">
+                        
+                        <ul>
+                            <li><span class="title">HP</span><span>45</span><span class="bar" data-green="true"></span></li>
+                            <li><span class="title">Attack</span><span>60</span><span class="bar"></span></li>
+                            <li><span class="title">Defense</span><span>48</span><span class="bar"></span></li>
+                        </ul>
+
+                        <h2>Type defenses</h2>
+
+                        <p>The effectiveness of each type on Bulbasaur.</p>
+
+                    </div>
+    
+                    <div id="evolution" class="section">
+                        <ul>
+                            <li><span class="title">Envysaur</span><span><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="Bulbasaur"></span></li>
+                            <li><span class="title">Torterra</span><span><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="Bulbasaur"></span></li>
+                        </ul>
+                    </div>
+    
+                    <div id="moves" class="section">
+                        <ul>
+                            <li><span>Move 1</span></li>
+                            <li><span>Move 2</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+            
+
+        </section>
+        
+        <script src="/assets/js/details.js"></script>
+    </body>
+</html>

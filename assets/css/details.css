@@ -1,0 +1,165 @@
+
+.details {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+@media screen and (min-width: 992px) {
+    .details {
+        max-width: 700px;
+    }
+}
+
+.details .header {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    z-index: 1;
+}
+
+.details .header h1 {
+    margin: 0;
+    color: white;
+}
+
+.details .header .number {
+    display: block;
+    text-align: right;
+    color: white;
+}
+
+.details .header .types {
+    list-style: none;
+    margin: 0;
+    padding: .8rem;
+}
+
+.details .header .types li {
+    display: inline;
+    border-radius: 1rem;
+    background-color: #ffffff55;
+    padding: .5rem 1rem;
+    color: white;
+}
+
+.details .header img {
+    display: block;
+    border-style: none;
+    max-width: 300px;
+    min-height: 220px;
+    margin: auto;
+}
+
+.details .info {
+    margin-top: -1rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 1.5rem 1.5rem 0 0rem;
+    height: 100%;
+    flex: 1;
+}
+
+.details .info .sections {
+    list-style: none;
+    margin: 0;
+    padding: .8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(192, 192, 192, 0.409);
+}
+
+.details .info .sections li {
+    display: inline;
+}
+
+.details .info .sections li a {
+    text-decoration: none;
+    color: silver;
+    padding-bottom: .8rem;
+    border-bottom: 2px solid rgba(95, 158, 160, 0);
+    transition: border-bottom-color .5s;
+}
+
+.details .info .sections li .actived {
+    color: black;
+    padding-bottom: .8rem;
+    border-bottom: 2px solid cadetblue;
+    transition: border-bottom-color .5s;
+}
+
+.details .info .sections-content {
+    display: flex;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.details .info .sections-content .section {
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.details .info .sections-content .section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.details .info .sections-content .section ul li {
+    padding: .5rem;
+}
+
+.details .info .sections-content .section ul li .title {
+    display: inline-block;
+    width: 6rem;
+    color: silver;
+}
+
+.details .info .sections-content .section ul li .male {
+    margin-left: .5rem;
+}
+
+.details .info .sections-content .section ul li .male:before {
+    content: "\2642";
+    color: blue;
+}
+
+.details .info .sections-content .section ul li .female {
+    margin-left: .5rem;
+}
+
+.details .info .sections-content .section ul li .female:before {
+    content: "\2640";
+    color: palevioletred;
+    font-weight: bold;
+}
+
+.details .info .sections-content .section ul li .bar {
+    display: inline-block;
+    height: 3px;
+    width: calc(100% - 8.5rem);
+    margin-left: 1.2rem;
+    background-color: silver;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.details .info .sections-content .section ul li .bar::before {
+    display: block;
+    content: " ";
+    width: 50%;
+    height: 3px;
+    background-color: red;
+}
+
+.details .info .sections-content .section ul li .bar[data-green]::before {
+    background-color: #00cc00;
+}
+
+.details .info .sections-content .section p {
+    color: silver;
+}
