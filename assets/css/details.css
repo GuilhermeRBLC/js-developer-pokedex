@@ -1,9 +1,9 @@
 
 .details {
+    display: none;
+    flex-direction: column;
     width: 100%;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
     margin: auto;
 }
 
@@ -21,6 +21,7 @@
 .details .header h1 {
     margin: 0;
     color: white;
+    text-transform: capitalize;
 }
 
 .details .header .number {
@@ -41,6 +42,7 @@
     background-color: #ffffff55;
     padding: .5rem 1rem;
     color: white;
+    margin-left: .5rem;
 }
 
 .details .header img {
@@ -119,47 +121,55 @@
     color: silver;
 }
 
-.details .info .sections-content .section ul li .male {
-    margin-left: .5rem;
-}
-
-.details .info .sections-content .section ul li .male:before {
-    content: "\2642";
-    color: blue;
-}
-
-.details .info .sections-content .section ul li .female {
-    margin-left: .5rem;
-}
-
-.details .info .sections-content .section ul li .female:before {
-    content: "\2640";
-    color: palevioletred;
-    font-weight: bold;
+.details .info .sections-content .section ul li span {
+    min-width: 2rem;
+    display: inline-block;
 }
 
 .details .info .sections-content .section ul li .bar {
     display: inline-block;
     height: 3px;
-    width: calc(100% - 8.5rem);
-    margin-left: 1.2rem;
+    width: calc(100% - 9.5rem);
+    margin-left: 1.3rem;
     background-color: silver;
     border-radius: 2px;
     overflow: hidden;
 }
 
-.details .info .sections-content .section ul li .bar::before {
+.details .info .sections-content .section ul li .bar span {
     display: block;
-    content: " ";
     width: 50%;
     height: 3px;
     background-color: red;
 }
 
-.details .info .sections-content .section ul li .bar[data-green]::before {
+.details .info .sections-content .section ul li .bar span[data-green] {
     background-color: #00cc00;
 }
 
-.details .info .sections-content .section p {
-    color: silver;
+.details .info .sections-content .section ul li img {
+    width: 200px;
+}
+
+.details .info .sections-content .section #moves-data {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    z-index: 99;
+}
+
+#overlay #loader {
+    display: block;
 }

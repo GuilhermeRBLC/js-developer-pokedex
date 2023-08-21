@@ -22,16 +22,22 @@
     </head>
     <body class="grass">
 
+        <div id="overlay">
+
+            <span id="loader"></span>
+
+        </div>
+
         <section class="details">
             <div class="header">
-                <h1>Bulbasaur</h1>
+                <h1 id="name">Bulbasaur</h1>
                 <span class="number">#001</span>
                 <ol class="types">
                     <li>Grass</li>
                     <li>Poison</li>
                 </ol>
     
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="Bulbasaur">    
+                <img id="photo" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="Bulbasaur">    
             </div>
             
             <div class="info">
@@ -47,46 +53,34 @@
 
                     <div id="about" class="section show">
 
-                        <ul>
+                        <ul id="about-data">
                             <li><span class="title">Species</span><span>Seed</span></li>
                             <li><span class="title">Height</span><span>2'3.6" (0,70 cm)</span></li>
                             <li><span class="title">Weight</span><span>15,2 lbs (6,9 kg)</span></li>
                             <li><span class="title">Abilities</span><span>Overgrow, Chlorophyl</span></li>
                         </ul>
 
-                        <h3>Breeding</h3>
-
-                        <ul>
-                            <li><span class="title">Gender</span><span class="male">87.5%</span><span class="female">12.5%</span></li>
-                            <li><span class="title">Egg Groups</span><span>Monster</span></li>
-                            <li><span class="title">Egg Cycle</span><span>Grass</span></li>
-                        </ul>
-
                     </div>
     
                     <div id="base-stats" class="section">
                         
-                        <ul>
-                            <li><span class="title">HP</span><span>45</span><span class="bar" data-green="true"></span></li>
-                            <li><span class="title">Attack</span><span>60</span><span class="bar"></span></li>
-                            <li><span class="title">Defense</span><span>48</span><span class="bar"></span></li>
+                        <ul id="base-stats-data">
+                            <li><span class="title">HP</span><span>45</span><span class="bar"><span data-green="true"></span></span></li>
+                            <li><span class="title">Attack</span><span>60</span><span class="bar"><span data-green="true"></span></span></li>
+                            <li><span class="title">Defense</span><span>48</span><span class="bar"><span data-green="true"></span></span></li>
                         </ul>
-
-                        <h2>Type defenses</h2>
-
-                        <p>The effectiveness of each type on Bulbasaur.</p>
 
                     </div>
     
                     <div id="evolution" class="section">
-                        <ul>
-                            <li><span class="title">Envysaur</span><span><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="Bulbasaur"></span></li>
-                            <li><span class="title">Torterra</span><span><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="Bulbasaur"></span></li>
+                        <ul id="evolution-data">
+                            <li><span>Envysaur</span><span><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="Bulbasaur"></span></li>
+                            <li><span>Torterra</span><span><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="Bulbasaur"></span></li>
                         </ul>
                     </div>
     
                     <div id="moves" class="section">
-                        <ul>
+                        <ul id="moves-data">
                             <li><span>Move 1</span></li>
                             <li><span>Move 2</span></li>
                         </ul>
@@ -98,7 +92,9 @@
             
 
         </section>
-        
+
+        <script src="/assets/js/pokemon-model.js"></script>
+        <script src="/assets/js/poke-api.js"></script>
         <script src="/assets/js/details.js"></script>
     </body>
 </html>
