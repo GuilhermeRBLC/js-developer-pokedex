@@ -148,7 +148,8 @@
 }
 
 .details .info .sections-content .section ul li img {
-    width: 200px;
+    max-width: 200px;
+    max-height: 200px;
 }
 
 .details .info .sections-content .section #moves-data {
